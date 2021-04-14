@@ -13,6 +13,7 @@ namespace AngularApp.Entidad
         public string Identificacion { get; set; }
         public string Nombres { get; set; }
         public int Edad { get; set; }
+        public string Codigo { get; set; }
 
     }
 }

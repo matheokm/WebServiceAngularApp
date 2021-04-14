@@ -56,6 +56,7 @@ namespace AngularApp.Datos
                     parameters.Add("@Identificacion", nuevaPersona.Identificacion);
                     parameters.Add("@Nombres", nuevaPersona.Nombres);
                     parameters.Add("@Edad", nuevaPersona.Edad);
+                    parameters.Add("@Codigo", nuevaPersona.Codigo);
                     parameters.Add("@accion", accion);
                     var result = db.Query<int>("[ActualizaPersona]", parameters, commandType: CommandType.StoredProcedure);
                     return 1;
